@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sofiia Kaparnyk Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<section id="header">
+    <nav>
+        <ul class="menu">
+            <li><a href="#" class="active" onclick="changeActiveClass(this)">Home</a></li>
+            <li><a href="#about" onclick="changeActiveClass(this)">About</a></li>
+            <li><a href="#work" onclick="changeActiveClass(this)">Work</a></li>
+            <li><a href="#contact" onclick="changeActiveClass(this)">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-heading">
+        <h3>Hi! Are You Looking For A Software Engineer?</h3>
+        <h1>I'm <span>Sofiia</span></h1>
+        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, </p>
+        <a class="header-btn" href="#contact">Contact</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-img"  data-aos="fade-right" data-aos-easing="ease-in-sine">
+        <img src="img/code.jpeg" alt="about-image"/>
+    </div>
+
+    <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+        <h2>Web Development Professional</h2>
+        <h3>I'm A Talented Web Developer</h3>
+        <p>
+            Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem
+            ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor.
+        </p>
+        <button class="header-btn">Read More</button>
+    </div>
+
+</section>
+
+<section id="work">
+    <div class="work-heading">
+        <h1>My Previous Work</h1>
+        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+    </div>
+
+    <div class="work-container">
+        <div class="work-box" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <div class="work-img">
+                <img src="img/code.jpeg">
+            </div>
+
+            <div class="work-text">
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+                <a class="header-btn" href="#">Read</a>
+            </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <div class="work-img">
+                <img src="img/code.jpeg">
+            </div>
+
+            <div class="work-text">
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+                <a class="header-btn" href="#">Read</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <div class="work-heading" data-aos="fade-up" data-aos-easing="ease-in-sine">
+        <h1>Contact Me</h1>
+        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+        <h2>Phone is +1222222222</h2>
+        <h2>Email is email@email.com</h2>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  function changeActiveClass(element) {
+    // Remove active class from all links
+    var links = document.querySelectorAll('.menu a');
+    links.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    // Add active class to the clicked link
+    element.classList.add('active');
+  }
+</script>
+</body>
+</html>
