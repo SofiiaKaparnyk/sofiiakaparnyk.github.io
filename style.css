@@ -6,8 +6,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
-    /*font-family: 'Raleway';*/
+    /*background-color: floralwhite;*/
+    background: linear-gradient(90deg, rgba(255,255,255, 0.6) 0%, rgba(255,255,255, 0.6) 100%), url("img/lemons.jpeg") center/cover fixed;
+
 }
 
 ul {
@@ -34,8 +35,9 @@ nav{
     left: 0;
     top:0;
     width: 100%;
+    height: 80px;
     z-index: 1;
-    background-color: bisque;
+    background-color: lightyellow;
 }
 
 nav ul{
@@ -58,28 +60,29 @@ nav ul li a{
 nav ul li a:hover,
 .active{
     border-bottom: 2px solid coral;
-    box-shadow: 5px 10px 30px rosybrown;
+    box-shadow: 5px 10px 30px #f3d5ae;
 }
 
 
 /***home***/
 
-
 #header{
-    width: 100%;
+    width: 90%;
     height: 768px;
     background-repeat: no-repeat;
     position: relative;
+    margin: 160px auto;
     background-size: contain;
     background-image: url("img/main_transparent.png");
-    background-position: right center;
+    background-position: right;
+    background-color: lightyellow;
 }
 
 
 .header-heading{
-    width: 500px;
+    width: 620px;
     position: absolute;
-    left: 18%;
+    left: 23%;
     top:50%;
     color: black;
     transform: translate(-18%, -50%);
@@ -91,39 +94,70 @@ nav ul li a:hover,
     letter-spacing: 3px;
 }
 
+.header-heading p{
+    font-size: 29px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
 .header-heading h1 span{
-    color: coral;
+    color: orange;
 }
 .header-btn{
     width: 120px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: coral;
-    box-shadow: 5px 10px 30px rosybrown;
+    background-color: orange;
+    box-shadow: 5px 10px 30px lightsalmon;
     border-radius: 10px;
     color: black;
     margin-top: 25px;
     transition: 0.6s ease-in-out;
+    font-size: 20px;
 }
 .header-btn:hover{
-    background-color: bisque;
+    background-color: darkorange;
 }
 
 
 /***about***/
 
-#about{
+#about, #challenges{
     width: 100%;
-    height: 80vh;
-    background-color: darksalmon;
-    display: flex;
     box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
     padding: 50px 5% 0px 5%;
     position: relative;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+
+.about-paragraph {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 10%;
+    }
+
+.about-back-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
 }
 .about-img{
     width: 50%;
@@ -135,26 +169,55 @@ nav ul li a:hover,
     width: 45%;
     color: black;
 }
+
 .about-text h2{
+    width: 500px;
     font-size: 2rem;
     font-weight: 600;
 }
 .about-text p{
-    width: 500px;
+    width: 550px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+
+/***challenges***/
+
+#challenges{
+    width: 96%;
+    margin: 0 auto;
+    background-color: lightyellow;
+}
+
+
+/***skills***/
+
+
+#skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    position: relative;
 }
 
 /***work***/
 
 #work{
-    width: 100%;
+    width: 96%;
     height: 100vh;
-    background-color: seagreen;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 40px 0;
+    margin: 0 auto;
+    background-color: lightyellow;
 
 }
 .work-container{
@@ -163,8 +226,8 @@ nav ul li a:hover,
     justify-content: center;
 }
 .work-box{
-    background-color: wheat;
-    width: 370px;
+    background-color: #fefee2;
+    width: 430px;
     height: 550px;
     margin: 20px;
     border-radius: 10px;
@@ -188,6 +251,8 @@ nav ul li a:hover,
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
 }
 .work-text p{
     text-align: center;
@@ -201,7 +266,9 @@ nav ul li a:hover,
     font-size: 2.5rem;
 }
 .work-heading p{
-    color: black;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
 }
 
 
@@ -214,5 +281,19 @@ nav ul li a:hover,
     justify-content: center;
     flex-direction: column;
     padding: 40px 0px;
-    background-color: thistle;
+    position: relative;
+}
+
+#contact .contact-back-img,
+#skills .skills-back-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: url("img/sliced-lemons.jpg");*/
+    /*background-image: url("img/lemons.jpeg");*/
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
 }

@@ -7,54 +7,187 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<section id="header">
     <nav>
         <ul class="menu">
             <li><a href="#" class="active" onclick="changeActiveClass(this)">Home</a></li>
-            <li><a href="#about" onclick="changeActiveClass(this)">About</a></li>
+            <li><a href="#about" onclick="changeActiveClass(this)">Achievements</a></li>
+            <li><a href="#challenges" onclick="changeActiveClass(this)">Current Challenges</a></li>
+            <li><a href="#skills" onclick="changeActiveClass(this)">Skills</a></li>
             <li><a href="#work" onclick="changeActiveClass(this)">Work</a></li>
             <li><a href="#contact" onclick="changeActiveClass(this)">Contact</a></li>
         </ul>
     </nav>
+<section id="header">
     <div class="header-heading">
-        <h3>Hi! Are You Looking For A Software Engineer?</h3>
+        <h2>Hi! Are You Looking For A Professional Software Engineer?</h2>
         <h1>I'm <span>Sofiia</span></h1>
-        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, </p>
+        <p> Software Engineer with experience in API development and data engineering using Python.
+            Skilled in AWS setup, CI/CD pipelines, and software optimization. Demonstrated success in e-commerce
+            shipping software integration and API development. Demonstrated excellence in project leadership
+            and cross-industry integration. </p>
         <a class="header-btn" href="#contact">Contact</a>
     </div>
 </section>
 
-<section id="about">
-    <div class="about-img"  data-aos="fade-right" data-aos-easing="ease-in-sine">
-        <img src="img/code.jpeg" alt="about-image"/>
-    </div>
 
-    <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
-        <h2>Web Development Professional</h2>
-        <h3>I'm A Talented Web Developer</h3>
-        <p>
-            Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem
-            ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor.
-        </p>
-        <button class="header-btn">Read More</button>
+<section id="about">
+
+    <div class="about-back-img"></div>
+    <div class="about-paragraph">
+        <!--        <p> Except being a great developer, I'm also nice and open person. I love new adventures, and I'm truly-->
+        <!--            interested in everything. I say yes to new experience, pottery - yes, hackaton - yes, new project - yes,-->
+        <!--            beer after work - yes, yes, and yes :)-->
+        <!--        </p>-->
+        <h2>Latest Achievements</h2>
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/aws_certificate.jpeg" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>DevOps Engineering on AWS</h2>
+            <p>
+                In December 2023 I finished 3-days course at AWS office. I always eager to extend my knowledge and learn
+                new services and technologies.
+            </p>
+            <a href="https://aws.amazon.com/training/classroom/devops-engineering-on-aws/" class="header-btn">Read
+                More</a>
+        </div>
+
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/logo_recognition.jpeg" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>Hackathon 2023 at Levi9</h2>
+            <p>
+                In June 2023 I participated in Hackathon at Levi9 dedicated to Levi9 logo recognition in the pictures.
+                With zero knowledge of ML and Deep Vision, within a week I managed to write and train YOLOv5 model on
+                Kaggle from the complete beginning. I won 4th place with more than 95% success rate of logo recognition.
+                The results are shown in the picture.
+            </p>
+            <a href="https://www.kaggle.com/competitions/levi9-hack9-2023/overview" class="header-btn">Read More</a>
+        </div>
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/deep_racer.jpeg" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>Hackathon 2021 at Levi9</h2>
+            <p>
+                In June 2021 I participated in Hackathon at Levi9 dedicated to AWS Deep Racer. "AWS DeepRacer is a fully
+                autonomous 1/18th scale race car driven by reinforcement learning, designed to help developers learn and
+                experiment with machine learning in a fun and hands-on way.".<br>
+                So our team had to write a code and train a virtual car on AWS DeepRacer in the way that the car would
+                be the fastest at unknown final track.<br>
+                Our team won 1st place, so I still have a real AWS deep racer car at home, that I can train and test on
+                real tracks
+                made out of tape at home.
+            </p>
+            <a href="https://www.levi9.com/racing-into-reinforcement-learning-with-hack9-2021-hackathon/"
+               class="header-btn">Read More</a>
+        </div>
     </div>
 
 </section>
 
+<section id="challenges">
+
+    <div class="challenges-back-img"></div>
+    <div class="about-paragraph">
+        <h2>Current Challenges</h2>
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/leetcode.png" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>LeetCode - Top Interview 150</h2>
+            <p>
+                I understand how important algorithm knowledge nowadays, so I've started the Leetcode challenge to
+                refresh some of my knowledge and gain a new one. I finished math gymnasium, so my love to science
+                makes those tasks especially interesting and challenging.
+            </p>
+            <a href="https://leetcode.com/studyplan/top-interview-150/" class="header-btn">Read
+                More</a>
+        </div>
+
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/find_your_own.png" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>Find Your Own</h2>
+            <p>
+                I'm always looking for a great idea for a website or platform. With my love to books and reading, all my
+                ideas always end up being a bookstore.<br>
+                This time, I decided to go the other way and create a resource that will unite Ukrainians in different
+                parts of the world, by helping them find other Ukrainians close by, Ukrainian services and events.<br>
+                Coming soon ...
+            </p>
+        </div>
+    </div>
+    <div class="about-container">
+        <div class="about-img" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <img src="img/udemy.png" alt="about-image"/>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-sine">
+            <h2>Udemy</h2>
+            <p>
+                Beloved Udemy, how many hours we spent together. It's hard to keep up with all the new technologies,
+                new tools and skills, but I'm trying my best. <br>
+                P.S. I finished "Mastering The System Design Interview" in 2023, that is gold.
+            </p>
+            <a href="https://www.levi9.com/racing-into-reinforcement-learning-with-hack9-2021-hackathon/"
+               class="header-btn">Read More</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="skills">
+    <div class="work-heading" data-aos="fade-up" data-aos-easing="ease-in-sine">
+        <h1>Skills</h1>
+        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+    </div>
+    <div class="skills-back-img"></div>
+</section>
+
 <section id="work">
     <div class="work-heading">
-        <h1>My Previous Work</h1>
-        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+        <h1>Job Experience</h1>
+        <p>Companies that I had the pleasure to work at!</p>
     </div>
 
     <div class="work-container">
         <div class="work-box" data-aos="fade-right" data-aos-easing="ease-in-sine">
             <div class="work-img">
-                <img src="img/code.jpeg">
+                <img src="img/IcomAI.png">
             </div>
 
             <div class="work-text">
-                <h4>Web Development</h4>
+                <h4>Python Developer | Icom.ai (Konect.ai)</h4>
+                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+                <a class="header-btn" href="#">Read</a>
+            </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up" data-aos-easing="ease-in-sine">
+            <div class="work-img">
+                <img src="img/SendCloud.png">
+            </div>
+
+            <div class="work-text">
+                <h4>Python Developer | SendCloud</h4>
                 <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
                 <a class="header-btn" href="#">Read</a>
             </div>
@@ -62,11 +195,11 @@
 
         <div class="work-box" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <div class="work-img">
-                <img src="img/code.jpeg">
+                <img src="img/Schoolbank.png">
             </div>
 
             <div class="work-text">
-                <h4>Web Development</h4>
+                <h4>Python Developer | Schoolbank</h4>
                 <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
                 <a class="header-btn" href="#">Read</a>
             </div>
@@ -82,20 +215,22 @@
         <h2>Phone is +1222222222</h2>
         <h2>Email is email@email.com</h2>
     </div>
+    <div class="contact-back-img"></div>
 </section>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
-  function changeActiveClass(element) {
-    // Remove active class from all links
-    var links = document.querySelectorAll('.menu a');
-    links.forEach(function(link) {
-      link.classList.remove('active');
-    });
-    // Add active class to the clicked link
-    element.classList.add('active');
-  }
+    AOS.init();
+
+    function changeActiveClass(element) {
+        // Remove active class from all links
+        var links = document.querySelectorAll('.menu a');
+        links.forEach(function (link) {
+            link.classList.remove('active');
+        });
+        // Add active class to the clicked link
+        element.classList.add('active');
+    }
 </script>
 </body>
 </html>
