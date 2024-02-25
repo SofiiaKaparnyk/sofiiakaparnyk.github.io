@@ -67,11 +67,12 @@ nav ul li a:hover,
 /***home***/
 
 #header{
-    width: 90%;
+    width: 98%;
     height: 768px;
     background-repeat: no-repeat;
     position: relative;
-    margin: 160px auto;
+    margin-inline: auto;
+    margin-top: 160px;
     background-size: contain;
     background-image: url("img/main_transparent.png");
     background-position: right;
@@ -186,7 +187,7 @@ nav ul li a:hover,
 /***challenges***/
 
 #challenges{
-    width: 96%;
+    width: 98%;
     margin: 0 auto;
     background-color: lightyellow;
 }
@@ -208,8 +209,8 @@ nav ul li a:hover,
 /***work***/
 
 #work{
-    width: 96%;
-    height: 100vh;
+    width: 98%;
+    height: 140vh;
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -228,7 +229,7 @@ nav ul li a:hover,
 .work-box{
     background-color: #fefee2;
     width: 430px;
-    height: 550px;
+    height: 800px;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -237,7 +238,7 @@ nav ul li a:hover,
 }
 .work-img{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 .work-img img{
     width: 100%;
@@ -246,7 +247,7 @@ nav ul li a:hover,
 }
 .work-text{
     width: 100%;
-    height: 35%;
+    height: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +256,9 @@ nav ul li a:hover,
     text-align: justify;
 }
 .work-text p{
-    text-align: center;
+    text-align: justify;
+    margin: 0 15px;
+
 }
 .work-heading{
     text-align: center;

@@ -5,18 +5,19 @@
     <title>Sofiia Kaparnyk Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#" class="active" onclick="changeActiveClass(this)">Home</a></li>
-            <li><a href="#about" onclick="changeActiveClass(this)">Achievements</a></li>
-            <li><a href="#challenges" onclick="changeActiveClass(this)">Current Challenges</a></li>
-            <li><a href="#skills" onclick="changeActiveClass(this)">Skills</a></li>
-            <li><a href="#work" onclick="changeActiveClass(this)">Work</a></li>
-            <li><a href="#contact" onclick="changeActiveClass(this)">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul class="menu">
+        <li><a href="#" class="active" onclick="changeActiveClass(this)">Home</a></li>
+        <li><a href="#about" onclick="changeActiveClass(this)">Achievements</a></li>
+        <li><a href="#challenges" onclick="changeActiveClass(this)">Current Challenges</a></li>
+        <li><a href="#skills" onclick="changeActiveClass(this)">Skills</a></li>
+        <li><a href="#work" onclick="changeActiveClass(this)">Work</a></li>
+        <li><a href="#contact" onclick="changeActiveClass(this)">Contact</a></li>
+    </ul>
+</nav>
 <section id="header">
     <div class="header-heading">
         <h2>Hi! Are You Looking For A Professional Software Engineer?</h2>
@@ -157,7 +158,19 @@
 <section id="skills">
     <div class="work-heading" data-aos="fade-up" data-aos-easing="ease-in-sine">
         <h1>Skills</h1>
-        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
+        <ul>
+            <li>Python</li>
+            <li>Django/ DRF</li>
+            <li>FatsAPI</li>
+            <li>AWS (EC2, S3, RDS)</li>
+            <li>REST APIs</li>
+            <li>PostgreSQL / MySQL / SQL Celery / Dramatiq</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Elasticsearch</li>
+            <li>CI/CD</li>
+            <li>Redis</li>
+        </ul>
     </div>
     <div class="skills-back-img"></div>
 </section>
@@ -176,8 +189,12 @@
 
             <div class="work-text">
                 <h4>Python Developer | Icom.ai (Konect.ai)</h4>
-                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
-                <a class="header-btn" href="#">Read</a>
+                <p>• Led AWS infrastructure setup for secure and scalable software <br>
+                    • Implemented GitLab CI/CD pipelines for efficient testing and deployment <br>
+                    • Enhanced software reliability and performance through pytest testing,
+                    database optimization, and RESTful refactoring <br>
+                    • Maintained 4 microservices for seamless communication and scalability</p>
+                <a class="header-btn" href="https://www.icom.ai/">Read</a>
             </div>
         </div>
 
@@ -188,8 +205,13 @@
 
             <div class="work-text">
                 <h4>Python Developer | SendCloud</h4>
-                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
-                <a class="header-btn" href="#">Read</a>
+                <p> • Provided API support for 23 shipping carriers, including industry leaders: Amazon, UPS, DPD, DHL,
+                    etc. <br>
+                    • Integrated 5 postal carrier APIs, attracting 40 new customers <br>
+                    • Implemented APIs that accelerated tracking updates from 8 hours to 1 hour <br>
+                    • Led a team of 4 employees, facilitating their onboarding and project
+                    involvement</p>
+                <a class="header-btn" href="https://www.sendcloud.com/">Read</a>
             </div>
         </div>
 
@@ -200,8 +222,11 @@
 
             <div class="work-text">
                 <h4>Python Developer | Schoolbank</h4>
-                <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
-                <a class="header-btn" href="#">Read</a>
+                <p>• Expanded the project's capabilities by integrating ElasticSearch for improved search functionality <br>
+                    • Enhanced the payment process by integrating a new payment API, resulting in increased speed and
+                    improved security <br>
+                    • Developed the social platform, driving user growth from 950k to 1.1 million</p>
+                <a class="header-btn" href="https://www.schoolbank.nl/">Read</a>
             </div>
         </div>
     </div>
@@ -211,9 +236,12 @@
 <section id="contact">
     <div class="work-heading" data-aos="fade-up" data-aos-easing="ease-in-sine">
         <h1>Contact Me</h1>
-        <p>Lorem ipsum dolor, sit lorem ipsum dolor, sit lorem ipsum dolor,</p>
-        <h2>Phone is +1222222222</h2>
-        <h2>Email is email@email.com</h2>
+        <h2><i class="fa fa-globe"></i> Vancouver, BC, Canada </h2>
+        <h2><i class="fa fa-phone"></i> +1-236-268-97-04 </h2>
+        <h2><i class="fa fa-envelope"></i> sofiia.kaparnyk@gmail.com </h2>
+        <h2><i class="fa fa-github"></i><a href="https://github.com/SofiiaKaparnyk"> GitHub</a></h2>
+        <h2><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/sofiia-kaparnyk-08a3bb140/"> Linkedin</a>
+        </h2>
     </div>
     <div class="contact-back-img"></div>
 </section>
