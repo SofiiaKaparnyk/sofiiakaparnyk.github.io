@@ -1,3 +1,21 @@
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    #header .container {
+        background-image: linear-gradient(90deg, rgba(255, 255, 227, 0.7) 0%, rgba(254, 250, 188, 0.7) 100%) !important;
+        display: flex !important;
+    }
+    #work .work-container {
+        grid-template-columns: 1fr; /* Change from grid layout to single column layout */
+    }
+
+    .work-box {
+        margin-bottom: 40px; /* Add margin between each job experience item */
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -110,7 +128,8 @@ nav ul li:hover,
 }
 
 #header .bg {
-    height: 700px;
+    min-height: 700px;
+    height: fit-content;
 }
 
 
