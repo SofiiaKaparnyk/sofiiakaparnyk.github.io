@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Sofiia Kaparnyk Portfolio</title>
+    <title>Sofiia Kaparnyk - Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link
@@ -31,6 +31,7 @@
         </li>
         <li onclick="changeActiveClass(this)"><a href="#skills">Skills</a></li>
         <li onclick="changeActiveClass(this)"><a href="#work">Work</a></li>
+        <li onclick="changeActiveClass(this)"><a href="#personal">Personal</a></li>
         <li onclick="changeActiveClass(this)">
             <a href="#contact">Contact</a>
         </li>
@@ -57,10 +58,6 @@
     <section id="about">
         <div class="container">
             <div class="about-paragraph">
-                <!--        <p> Except being a great developer, I'm also nice and open person. I love new adventures, and I'm truly-->
-                <!--            interested in everything. I say yes to new experience, pottery - yes, hackaton - yes, new project - yes,-->
-                <!--            beer after work - yes, yes, and yes :)-->
-                <!--        </p>-->
                 <h2 class="text_36">Latest Achievements</h2>
             </div>
             <div class="about-container">
@@ -107,11 +104,10 @@
                     <h3>Hackathon 2023 at Levi9</h3>
                     <p>
                         In June 2023 I participated in Hackathon at Levi9 dedicated to
-                        Levi9 logo recognition in the pictures. With zero knowledge of
-                        ML and Deep Vision, within a week I managed to write and train
-                        YOLOv5 model on Kaggle from the complete beginning. I won 4th
-                        place with more than 95% success rate of logo recognition. The
-                        results are shown in the picture.
+                        Levi9 logo recognition in the pictures. Despite having no prior experience in ML and Deep
+                        Vision, I successfully wrote and trained a YOLOv5 model on Kaggle within a week, starting from
+                        scratch. I won 4th place with more than 95% success rate of logo recognition. The results are
+                        shown in the picture.
                     </p>
                     <a
                             href="https://www.kaggle.com/competitions/levi9-hack9-2023/overview"
@@ -179,11 +175,9 @@
                 >
                     <h3>LeetCode - Top Interview 150</h3>
                     <p>
-                        I understand how important algorithm knowledge nowadays, so I've
-                        started the Leetcode challenge to refresh some of my knowledge
-                        and gain a new one. I finished math gymnasium, so my love to
-                        science makes those tasks especially interesting and
-                        challenging.
+                        Recognizing the importance of algorithmic knowledge in today's world, I've embarked on the
+                        LeetCode challenge to refresh my existing skills and acquire new ones. I finished math
+                        gymnasium, so my love to science makes those tasks especially interesting and challenging.
                     </p>
                     <a
                             href="https://leetcode.com/studyplan/top-interview-150/"
@@ -253,27 +247,23 @@
 
     <section id="skills">
         <div class="skills-container">
-            <div
-                    class="work-heading"
-                    data-aos="fade-up"
-                    data-aos-easing="ease-in-sine"
-            >
+            <div class="work-heading">
                 <h2 class="text_36">Technical Skills</h2>
             </div>
-                <div class="skills-grid">
-                    <div class="skill">Python</div>
-                    <div class="skill">Django/ DRF</div>
-                    <div class="skill">FatsAPI</div>
-                    <div class="skill">AWS (EC2, S3, RDS)</div>
-                    <div class="skill">REST APIs</div>
-                    <div class="skill">PostgreSQL / MySQL / SQL</div>
-                    <div class="skill">Celery / Dramatiq</div>
-                    <div class="skill">Git</div>
-                    <div class="skill">Docker</div>
-                    <div class="skill">Elasticsearch</div>
-                    <div class="skill">CI/CD</div>
-                    <div class="skill">Redis</div>
-                </div>
+            <div class="skills-grid" data-aos="fade-up" data-aos-easing="ease-in-sine">
+                <div class="skill bg">Python</div>
+                <div class="skill bg">Django/ DRF</div>
+                <div class="skill bg">FatsAPI</div>
+                <div class="skill bg">AWS (EC2, S3, RDS)</div>
+                <div class="skill bg">REST APIs</div>
+                <div class="skill bg">PostgreSQL / MySQL / SQL</div>
+                <div class="skill bg">Celery / Dramatiq</div>
+                <div class="skill bg">Git</div>
+                <div class="skill bg">Docker</div>
+                <div class="skill bg">Elasticsearch</div>
+                <div class="skill bg">CI/CD</div>
+                <div class="skill bg">Redis</div>
+            </div>
 
             <div class="skills-back-img"></div>
         </div>
@@ -357,6 +347,43 @@
                         </ul>
                         <a class="header-btn" href="https://www.schoolbank.nl/">Read</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal">
+        <div class="container">
+            <div class="work-heading">
+                <h2 class="text_36">3 Random Personal Facts</h2>
+            </div>
+            <div class="personal-grid">
+                <div class="personal-fact bg" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                    <h4>Fact 1 <i class="fa fa-book"></i></h4>
+                    I love to read. I enjoy a wide variety of books: scientific, psychological, detective, novels,
+                    romance novels, fiction, non-fiction, motivational, you name it. And I particularly love paper
+                    books; I even had a small library back in Ukraine.<br>
+                    My last three reads were:
+                    <ol>
+                        <li>"Gone with the Wind" by Margaret Mitchell</li>
+                        <li>"Flowers for Algernon" by Daniel Keyes</li>
+                        <li>"A Man Called Ove" by Fredrik Backman</li>
+                    </ol>
+                </div>
+                <div class="personal-fact bg" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                    <h4>Fact 2 <i class="fa fa-smile-o"></i></h4>
+                    I'm very nice, open and easy-going person, always get along with a team, and we often become
+                    friends.
+                    Passionate about new adventures and genuinely interested in everything.
+                    I say yes to new experience, pottery - yes, hackathon - yes, new project - yes, beer after work -
+                    yes, yes, and yes :)
+
+                </div>
+                <div class="personal-fact bg" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                    <h4>Fact 3 <i class="fa fa-hand-peace-o"></i></h4>
+                    Sports have always been a part of my life. While I don't pursue them professionally, I consistently
+                    engage in activities such as gym workouts, dance, or yoga.
+                    Lately, I've been practicing yoga extensively—33 sessions in the last 36 days.
                 </div>
             </div>
         </div>
