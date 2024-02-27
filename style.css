@@ -403,17 +403,15 @@ nav ul li:hover,
 
 }
 
-
 /***personal***/
-
-#personal {
-    padding: 40px 20px;
-}
 
 .personal-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
     padding-top: 30px;
 }
 
@@ -424,7 +422,6 @@ nav ul li:hover,
 .personal-fact ol li {
     margin-left: 50px;
     list-style: decimal;
-
 }
 
 .personal-fact {
