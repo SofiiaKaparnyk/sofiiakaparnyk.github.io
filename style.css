@@ -90,6 +90,9 @@
     #skills .skills-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+    .about-text p{
+        font-size: 20px !important;
+    }
 }
 
 * {
