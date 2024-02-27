@@ -20,23 +20,19 @@
 <body>
 <nav>
     <ul class="menu">
-        <li class="active" onclick="changeActiveClass(this)">
-            <a href="#">Home</a>
-        </li>
-        <li onclick="changeActiveClass(this)">
-            <a href="#about">Achievements</a>
-        </li>
-        <li onclick="changeActiveClass(this)">
-            <a href="#challenges">Current Challenges</a>
-        </li>
+        <li class="active" onclick="changeActiveClass(this)"><a href="#">Home</a></li>
+        <li onclick="changeActiveClass(this)"><a href="#about">Achievements</a></li>
+        <li onclick="changeActiveClass(this)"><a href="#challenges">Current Challenges</a></li>
         <li onclick="changeActiveClass(this)"><a href="#skills">Skills</a></li>
         <li onclick="changeActiveClass(this)"><a href="#work">Work</a></li>
         <li onclick="changeActiveClass(this)"><a href="#personal">Personal</a></li>
-        <li onclick="changeActiveClass(this)">
-            <a href="#contact">Contact</a>
-        </li>
+        <li onclick="changeActiveClass(this)"><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="mobile-list">
+        <li><i class="fa fa-bars" onclick="addActive()"></i></li>
     </ul>
 </nav>
+
 <main>
     <section id="header">
         <div class="container bg">
@@ -419,6 +415,14 @@
 <script>
     AOS.init();
 
+    function addActive() {
+    let menu = document.querySelector(".mobile-list");
+    menu.classList.toggle("active");
+
+    // Toggle a class on the nav element to show/hide the menu
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("active");
+}
     function changeActiveClass(element) {
         // Remove active class from all links
         var links = document.querySelectorAll(".menu li");
