@@ -28,9 +28,18 @@
         <li onclick="changeActiveClass(this)"><a href="#personal">Personal</a></li>
         <li onclick="changeActiveClass(this)"><a href="#contact">Contact</a></li>
     </ul>
-    <ul class="mobile-list">
-        <li><i class="fa fa-bars" onclick="addActive()"></i></li>
-    </ul>
+    <div class="mobile-nav">
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+        <ul class="mobile-menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#about"><li>Achievements</li></a>
+            <a href="#challenges"><li>Current Challenges</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#work"><li>Work</li></a>
+            <a href="#personal"><li>Personal</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </div>
 </nav>
 
 <main>
@@ -415,14 +424,20 @@
 <script>
     AOS.init();
 
-    function addActive() {
-    let menu = document.querySelector(".mobile-list");
-    menu.classList.toggle("active");
+    function toggleMenu() {
+        var mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenu.classList.toggle('active');
+    }
 
-    // Toggle a class on the nav element to show/hide the menu
-    let nav = document.querySelector("nav");
-    nav.classList.toggle("active");
-}
+    // Function to close the mobile menu if a navigation item is clicked
+    document.querySelectorAll('.mobile-menu a').forEach(item => {
+        item.addEventListener('click', function () {
+            var menu = document.querySelector('.mobile-menu');
+            menu.classList.remove('active');
+        });
+    });
+
+
     function changeActiveClass(element) {
         // Remove active class from all links
         var links = document.querySelectorAll(".menu li");
