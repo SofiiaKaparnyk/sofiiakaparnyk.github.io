@@ -84,13 +84,6 @@
         grid-template-columns: 1fr;
     }
 
-    #about,
-    #challenges,
-    #work,
-    #contact{
-        padding: 10px;
-    }
-
     .work-box {
         margin-bottom: 40px;
     }
